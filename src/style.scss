@@ -1,1 +1,63 @@
+$bg-color: #293241;
+$primary-color: #d9534f;
 
+body {
+  background-color: $bg-color;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem auto 2rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.incrementers {
+  display: flex;
+  justify-content: center;
+}
+
+.increment-group {
+  margin: 0rem 4rem;
+  text-align: center;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12rem;
+}
+
+.timer {
+  background-color: $primary-color;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid white;
+  transition: background-color 0.5s ease;
+  &:target {
+    background-color: green;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+#reset {
+  margin-bottom: 2rem;
+  width: 300px;
+}
